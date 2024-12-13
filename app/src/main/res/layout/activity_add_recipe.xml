@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_recipe">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        android:background="@drawable/orange_border">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Recipe"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/orange1"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/add_image"
+            android:id="@+id/addImage"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/recipeTitle"
+            android:background="@drawable/orange_border"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:hint="Recipe Title"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/orange1"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:id="@+id/recipeIngredients"
+            android:background="@drawable/orange_border"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:hint="Enter Recipe Ingredients"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/orange1"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/recipeInstructions"
+            android:background="@drawable/orange_border"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:hint="Enter Recipe Instructions"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/orange1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveRecipe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Save"
+                android:textSize="25dp"
+                app:cornerRadius="20dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/orange1"/>
+
+            <Button
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Exit"
+                android:textColor="@color/black"
+                android:id="@+id/exit"
+                android:textSize="25dp"
+                app:cornerRadius="20dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/orange1"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+</ScrollView>
